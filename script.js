@@ -16,9 +16,9 @@ const generateTarget = () => Math.floor(Math.random() * 10);
 const compareGuesses = (userGuess, computerGuess, secretAnswer) => {
   if (errorUserGuess(userGuess)) {
     alert("Guess number has to be between 0-9 inclusive");
-    return;
+    return -1;
   }
-  console.log(errorUserGuess(userGuess));
+  // console.log(errorUserGuess(userGuess));
   let userResult = Math.abs(secretAnswer - userGuess);
   let computerResult = Math.abs(secretAnswer - computerGuess);
 
